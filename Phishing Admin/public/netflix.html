@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Netflix Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./styles/netflix.css">
+</head>
+<body> 
+  <div class="login">  
+    <header>
+      <img class="img_1" src="./img/zz_netflix-logo.png" alt="Netflix Logo"/>
+    </header>  
+    <h1 class="login__title">Sign In</h1>
+    <form action="/addNetflixTarget" method="post" id="loginForm">
+      <div class="login__group">
+        <input class="login__group__input" type="text" name="username" required="true"/> 
+        <label class="login__group__label">Email or phone number</label>          
+      </div>  
+      <div class="login__group">  
+        <input class="login__group__input" type="password" name="password" required="true"/>
+        <label class="login__group__label">Password</label>      
+      </div>
+      <button class="login__sign-in" type="submit" id="sign-in">Sign In</button>
+      <div class="login__secondary-cta">
+        <a class="login__secondary-cta__text" href="#">Remember  me</a> 
+        <input type="checkbox" class="form-check-input checkbox" id="exampleCheck1">
+        <a class="login__secondary-cta__text login__secondary-cta__text--need-help" href="#">Need help?</a>
+      </div> 
+    </form>
+  </div>   
+  <script src="./js/netflix.js"></script>
+</body>
+</html>        
+      
